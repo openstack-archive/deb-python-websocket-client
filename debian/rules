@@ -22,6 +22,9 @@ override_dh_auto_install:
 	mv $(CURDIR)/debian/python-websocket-client/usr/bin/wsdump.py $(CURDIR)/debian/python-websocket-client/usr/bin/python2-wsdump
 	mv $(CURDIR)/debian/python3-websocket-client/usr/bin/wsdump.py $(CURDIR)/debian/python3-websocket-client/usr/bin/python3-wsdump
 
+override_dh_python3:
+	dh_python3 --shebang=/usr/bin/python3
+
 override_dh_auto_test:
 ifeq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))
 	set -e ; for pyvers in $(PYTHONS) $(PYTHON3S); do \

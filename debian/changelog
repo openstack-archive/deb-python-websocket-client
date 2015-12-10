@@ -1,3 +1,9 @@
+python-websocket-client (0.34.0-2) unstable; urgency=medium
+
+  * Fixed Py3 shebang.
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 10 Dec 2015 14:43:24 +0000
+
 python-websocket-client (0.34.0-1) unstable; urgency=medium
 
   * Initial release. (Closes: #807581)
