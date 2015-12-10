@@ -1,0 +1,5 @@
+python-websocket-client (0.34.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #807581)
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 10 Dec 2015 15:06:57 +0100
